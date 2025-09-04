@@ -1,4 +1,5 @@
 import express from "express";
+import helmet from "helmet";
 import { createServer } from "http";
 import cors from "cors";
 import { createChatCompletionHandler } from "./chatCompletionHandler";
@@ -18,6 +19,7 @@ import {
 
 // Create Express app
 const app = express();
+app.use(helmet());
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
