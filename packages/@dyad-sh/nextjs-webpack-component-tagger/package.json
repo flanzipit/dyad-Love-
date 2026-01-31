@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/node": "^20.8.9",
     "@types/webpack": "^5.28.5",
-    "eslint": "^8.52.0",
+    "eslint": "^9.26.0",
     "tsup": "^8.0.2",
     "typescript": "^5.2.2"
   },
